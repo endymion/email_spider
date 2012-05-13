@@ -14,7 +14,7 @@ Then bundle the gems with: `bundle install`
 
 Invoke the spider with:
 
-  ruby crawl.rb http://target.com
+    ruby crawl.rb http://target.com
 
 The spider will display the URL of each page as it crawls the web site.  It will write out a pages.pstore
 file for keeping track of the pages that it has crawled, and a data.db file for storing harvested
@@ -22,12 +22,12 @@ addresses.
 
 To export the addresses from the database, us the "export" Rake task:
 
-  rake export
+    rake export
 
 You should see output like this:
 
-  [~/projects/email_spider] rake export
-  31 addresses exported to addresses.csv
+    [~/projects/email_spider] rake export
+    31 addresses exported to addresses.csv
 
 Each row in the exported data contains the email address, the date/time that it was collected, the host
 of the site where it was collected, and the URL for the specific page where it was found.
