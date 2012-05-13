@@ -8,7 +8,7 @@ class Site
 
   property :id,         Serial
   property :created_at, DateTime
-  property :url,        String
+  property :host,       String
 
   has n, :addresses
   has n, :pages
