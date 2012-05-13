@@ -8,12 +8,12 @@ class Site
 
   property :id,         Serial
   property :created_at, DateTime
-  property :url,        String
+  property :host,       String
 
   has n, :addresses
   has n, :pages
 
-  validates_presence_of :url
+  validates_presence_of :host
 end
 
 class Page
